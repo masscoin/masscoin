@@ -84,9 +84,6 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
      
    4)Now repeat step 2 to get daemon active<br />
 
-note * make sure port no  2333 is is not busy
-if not then add following line in masscoin.conf to initiate daemon of your desired port
-   ``` rpcport=XXXX``` 
 
 ### Installing  masscoin in windows system     
     
@@ -94,21 +91,4 @@ if not then add following line in masscoin.conf to initiate daemon of your desir
 2)Install  the instance through setup file inside out folder<br />
 And your masscoin instance runs in your system after sucessful installation<br />
 
-### Minning masscoin in using GPU
 
-1)Download CGminer(preferable v3.7.2)<br />
-2)Goto source file using terminal and type following command<br />
-
-```./cgminer --scrypt -o http://127.0.0.1:2333 -u username -p paswrd --intensity d```<br />
-Note: Port should same where daemon is running
-
-### Minning masscoin in using CPU(not recommended)
-1)Daemon should still be active 
-2)Type following command
-``` ./masscoind setgenerate true``` 
-
-### log Alert
-User will get to see the log on
-``` root``` <br />
-```cd .masscoin```<br />
-```tailf debug.log```
